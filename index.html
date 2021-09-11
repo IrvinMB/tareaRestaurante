@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet"
+  href="https://fonts.googleapis.com/css?family=Tangerine">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital@1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./index.css">
+  <script src="index.js"></script>
+  <title>K.I. Gurmet-Tico</title>
+</head>
+<body>
+  <header class="header">   
+    <div class="elTitulo">
+      <h3>K.I. Gurmet-Tico</h3>     
+    </div>  
+      <nav class="main-navigation">
+        <a href="index.html">Inicio</a>
+        <a href="index.html">Menu</a>
+        <a href="index.html">Reservación</a>
+        <a href="contacto.html">Contáctenos</a>
+      </nav>    
+      <div>
+        <i class="fab fa-facebook"></i>
+        <i class="fab fa-instagram"></i>
+      </div> 
+  </header>
+  <main>
+    <section class="carrusel-contenedor">
+      <button onclick="cambiarIndice(-1)" class="chevron-button chevron-button-left">
+        <i class="fas fa-chevron-right chevron-left"></i>
+      </button>
+      <ul id="carrusel" class="carrusel carrousel-height-definido">
+        <li class="hero-banner slide">
+          <p>Loby</p>
+          <img alt="Loby" src="https://i1.wp.com/www.diegocoquillat.com/wp-content/uploads/2016/08/Dinner-by-Heston-Blumenthal.jpg">
+        </li>
+
+        <li class="hero-banner slide">
+          <p>Sala común</p>
+          <img alt="Sala común" src="https://i.pinimg.com/originals/be/eb/db/beebdb8c2bc61162a589bcf58fc0f286.jpg">
+        </li>
+
+        <li class="hero-banner slide">
+          <p>Terraza</p>
+          <img alt="Terraza"  src="https://i2.wp.com/foodandpleasure.com/wp-content/uploads/2019/02/terraza-arango-2.jpg?fit=960%2C640&ssl=1">
+        </li>
+      </ul>
+      <ul id="dot-container" class="dot-container"></ul>
+      <button id="ver-mas" class="ver-mas" onclick="manejarVerMas()">Ver más</button>
+      <button onclick="cambiarIndice(1)" class="chevron-button chevron-button-right">
+        <i class="fas fa-chevron-right"></i>
+      </button>
+    </section>
+    <section class="flex-grid">
+      <img alt="plato con carne gourmet" src="https://media.timeout.com/images/105390597/image.jpg">
+      <img alt="plato tropical de tamal de maiz" src="http://3.bp.blogspot.com/-SeaIxwG6KLc/U-zvHOctO4I/AAAAAAAAYgs/9sYb2WXoDo8/s1600/Surub%C3%AD%2Ben%2Bsalsa%2Bde%2Bcopuaz%C3%BA%2C%2Bacompa%C3%B1ado%2Bde%2Btamal%2Bdulce%2Bde%2Bpapa%2By%2Bchoclo.jpg">
+      <img alt="plato con taco chino con salsa dulce" src="https://i.pinimg.com/236x/dc/c3/33/dcc3333232048e5f038383e23db97df4--tamale-plating.jpg">
+      <img alt="plato gourmet de pasta de atún con tocino" src="https://m1.paperblog.com/i/424/4247395/platos-comida-elegantes-gourmet-economica-fie-L-EIVR1Q.jpeg">
+      <img alt="seviche de camaron con lechuga servido en una piña a la mitad" src="https://media-cdn.tripadvisor.com/media/photo-s/15/c1/5a/6f/always-better.jpg">
+      <img alt="filete de pollo con arroz y cebolla" src="https://img.culturacolectiva.com/content/2016/08/foie-gras-elegante-gente.jpg">
+      <img alt="plato de lazaña de atun con pepino en lamina y tomate" src="https://media-cdn.tripadvisor.com/media/photo-s/09/3f/ea/ec/comida-excelente-y-ambiente.jpg">
+      <img alt="plato de pavo partido en rodajas" src="https://static.vix.com/es/sites/default/files/styles/large/public/imj/elgranchef/Q/Que-es-la-comida-halal-4.jpg">
+    </section>
+
+  <div class="contact_form">
+    <div class="formulario">      
+      <h2>Formulario de contacto</h2>
+          <form action="" method="post">      
+            <div>
+              <label for="nombre">Entra tu nombre:</label>
+              <input type="text" id="nombre" name="nombre">
+            </div>
+            <div>
+              <label for="phone">Teléfono:</label>
+              <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}">
+            </div>
+            <div>
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email">
+            </div>
+            <div>
+              <label for="asunto">Asunto:</label>
+              <textarea id="asunto" name="asunto"></textarea>
+            </div>  
+          
+            <input type="submit" name="submit" value="Enviar" />  
+           
+                    
+          </form>
+    </div>  
+  
+  </div>
+</main>
+  <footer></footer>
+</body>
+</html>
